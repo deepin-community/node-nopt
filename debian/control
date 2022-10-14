@@ -1,0 +1,29 @@
+Source: node-nopt
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Jérémy Lal <kapouer@melix.org>
+Build-Depends: debhelper-compat (= 13)
+ , node-abbrev
+ , node-tap
+ , dh-sequence-nodejs
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-nopt
+Vcs-Git: https://salsa.debian.org/js-team/node-nopt.git
+Homepage: https://github.com/isaacs/nopt
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-nopt
+Architecture: all
+Depends: ${misc:Depends}
+ , node-abbrev
+ , nodejs
+Description: Command-line option parser for Node.js
+ Full featured option parser, with support for :
+  * types (String, path, url, Number, Date, Boolean, NaN, Stream, Array)
+  * error handling
+  * abbreviations
+  * shorthands
+ .
+ Node.js is an event-based server-side javascript engine.
